@@ -13,7 +13,7 @@
 
 
 
- - In diesem Projekt wollt ich guten struktierten HTML-CSS- und TAILWIND-Code schreiben.
+ - In diesem Projekt wollte ich guten struktierten HTML-CSS- und TAILWIND-Code schreiben.
 
  - Ich habe meine Musterseite in Dribble.com gefunden.
 
