@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+
+.hero {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.right {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.footer-ein {
+  margin: 0 auto;
+  width: 90%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  border-top-right-radius: 40%;
+  border-top-left-radius: 5rem;
+  margin-left: 5%;
+  text-align: center;
+
+
+}
+
+.item img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.icon-item1 {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  right: 75%;
+  bottom: 35%;
+
+}
+
+.icon-item2 {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  right: 5%;
+  bottom: 60%;
+}
+
+@media screen and (max-width:768px) {
+  .hero {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .right {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+}
